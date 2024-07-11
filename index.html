@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="ootd-icon" href="logo-bar.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOOTD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="logo-web.png" width="80%"
+                    height="40%"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">SEE MORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>PHOTOGRAFIC OOTD</h1>
+            <p>Our fashion reference displays ootds that you will like.</p>
+            <a class="hero-btn">Click Here To See More</a>
+        </div>
+
+    </section>
+
+    <!------ OOTD ------>
+
+    <section class="ootd">
+        <h1>OOTD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ab impedit nam et quidem, commodi numquam quas
+            nostrum iusto soluta quae nemo quasi voluptates, laborum ducimus nihil, quisquam dignissimos veritatis!</p>
+        <div class="row">
+            <div class="ootd-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui veritatis error deleniti dolorum
+                    consequatur exercitationem! Consequuntur maiores laboriosam blanditiis, voluptatibus reprehenderit
+                    possimus dignissimos sint qui, deleniti expedita quas. Cum, quo?</p>
+            </div>
+            <div class="ootd-col">
+                <h3>Fashion</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui veritatis error deleniti dolorum
+                    consequatur exercitationem! Consequuntur maiores laboriosam blanditiis, voluptatibus reprehenderit
+                    possimus dignissimos sint qui, deleniti expedita quas. Cum, quo?</p>
+            </div>
+            <div class="ootd-col">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui veritatis error deleniti dolorum
+                    consequatur exercitationem! Consequuntur maiores laboriosam blanditiis, voluptatibus reprehenderit
+                    possimus dignissimos sint qui, deleniti expedita quas. Cum, quo?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------- fashion ------->
+
+    <section class="fashion">
+        <h1>Our Fashion</h1>
+        <p>looks elegant and gorgeous.</p>
+
+        <div class="row">
+            <div class="fashion-col">
+                <img src="korea.png">
+                <div class="layer">
+                    <h3>KOREA</h3>
+                </div>
+            </div>
+            <div class="fashion-col">
+                <img src="europe.jpg">
+                <div class="layer">
+                    <h3>EUROPE</h3>
+                </div>
+            </div>
+            <div class="fashion-col">
+                <img src="elegant.jpg">
+                <div class="layer">
+                    <h3>ELEGANT</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------ FOOTER ------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We photograph fashion or OOTD, such as Korean, European, <br>Asian, formal, casual, etc.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by PHOOTD </p>
+    </section>
+
+    <!------Javascript for Toggle Menu------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
